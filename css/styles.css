@@ -10132,7 +10132,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-image: url("../assets/img/header-bg-3.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10511,7 +10511,7 @@ header.masthead .masthead-heading {
 
 .overlay-text {
   color: #212529;
-  font-size: 30px;
+  font-size: 10px;
   position: absolute;
   top: 40%;
   left: 50%;
