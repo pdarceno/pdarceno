@@ -69,6 +69,16 @@ body {
   background-color: #fff;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
@@ -10441,6 +10451,7 @@ header.masthead .masthead-heading {
   width: 14rem;
   height: 14rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
 }
 .team-member h4 {
   margin-top: 1.5rem;
