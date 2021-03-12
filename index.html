@@ -13,6 +13,9 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
 		<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<!-- Core theme CSS (includes Bootstrap)-->
 		<link href="css/styles.css" rel="stylesheet" />
 	</head>
@@ -20,7 +23,7 @@
 		<!-- Navigation-->
 		<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
 			<div class="container">
-				<a class="navbar-brand js-scroll-trigger" href="#page-top">Start</a>
+				<a class="navbar-brand js-scroll-trigger" href="#page-top" style="padding-top: 1.5rem;">Start</a>
 				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 					Menu
 					<i class="fas fa-bars ml-1"></i>
@@ -52,21 +55,41 @@
 					<h3 class="section-subheading text-muted">My objective is to find a position I can carry out my duties and maximize my skills as a programmer.</h3>
 				</div>
 				<div class="row text-center">
-					<div class="col-12 col-sm-4 col-lg-4">
+					<div class="col-0 col-md-1 col-lg-1">
+					</div>
+					<div class="col-6 col-md-5 col-lg-5">
+						<span class="fa-stack fa-4x">
+							<i class="fas fa-circle fa-stack-2x text-primary"></i>
+							<i class="far fa-handshake fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="my-3">Help Secure Deals</h4>
+					</div>
+					<div class="col-6 col-md-5 col-lg-5">
+						<span class="fa-stack fa-4x">
+							<i class="fas fa-circle fa-stack-2x text-primary"></i>
+							<i class="far fa-grin-beam fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="my-3">Help Improve Client Satisfaction</h4>
+					</div>
+					<div class="col-0 col-md-1 col-lg-1">
+					</div>
+				</div>
+				<div class="row text-center">
+					<div class="col-6 col-md-4 col-lg-4">
 						<span class="fa-stack fa-4x">
 							<i class="fas fa-circle fa-stack-2x text-primary"></i>
 							<i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
 						</span>
 						<h4 class="my-3">Create Responsive Designs</h4>
 					</div>
-					<div class="col-12 col-sm-4 col-lg-4 order-2">
+					<div class="col-6 col-md-4 col-lg-4 order-2">
 						<span class="fa-stack fa-4x">
 							<i class="fas fa-circle fa-stack-2x text-primary"></i>
-							<i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+							<i class="fas fa-money-bill-wave fa-stack-1x fa-inverse"></i>
 						</span>
 						<h4 class="my-3">Help Businesses Grow</h4>
 					</div>
-					<div class="col-12 col-sm-4 col-lg-4 order-3">
+					<div class="col-md-4 col-lg-4 order-3">
 						<span class="fa-stack fa-4x">
 							<i class="fas fa-circle fa-stack-2x text-primary"></i>
 							<i class="fas fa-lock fa-stack-1x fa-inverse"></i>
@@ -395,6 +418,112 @@
 			</div>
 		</footer>
 		<!-- Portfolio Modals-->
+		<div class="portfolio-modal modal fade" id="portfolioModal1Pics" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="width: 1000px; ">
+			<div class="modal-dialog">
+				<div class="modal-content">              
+					<div class="close-modal" data-dismiss="modal" data-toggle="modal" href="#portfolioModal1"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12">
+								<div class="modal-body">
+									<div id="myCarousel4" class="carousel slide" data-ride="carousel">
+										<!-- Wrapper for slides -->
+										<div class="carousel-inner">
+											<div class="carousel-inner">
+												<div class="item active">
+													<img src="assets/img/projects/1-comments.jpg" alt="Comments" style="width:100%;">
+													<h4 class="text-uppercase">Comments</h4>
+												</div>
+												<div class="item">
+													<img src="assets/img/projects/2-questions.jpg" alt="Questions" style="width:100%;">
+													<h4 class="text-uppercase">Questions</h4>
+												</div>
+												<div class="item">
+													<img src="assets/img/projects/3-photobooths.jpg" alt="Photobooths" style="width:100%;">
+													<h4 class="text-uppercase">Photobooths</h4>
+												</div>
+												<div class="item">
+													<img src="assets/img/projects/4-photobooths.jpg" alt="Photobooths (Preview Image)" style="width:100%;">
+													<h4 class="text-uppercase">Photobooths (Preview)</h4>
+												</div>
+											</div>
+										</div>
+
+									<!-- Left and right controls -->
+										<a class="left carousel-control" href="#myCarousel4" data-slide="prev">
+											<span class="glyphicon glyphicon-chevron-left"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="right carousel-control" href="#myCarousel4" data-slide="next">
+											<span class="glyphicon glyphicon-chevron-right"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio-modal modal fade" id="portfolioModal2Pics" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="width: 1000px; ">
+			<div class="modal-dialog">
+				<div class="modal-content">              
+					<div class="close-modal" data-dismiss="modal" data-toggle="modal" href="#portfolioModal2"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12">
+								<div class="modal-body">
+									<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+										<!-- Wrapper for slides -->
+										<div class="carousel-inner">
+											<div class="item active">
+												<img src="assets/img/projects/ideaspace-1.jpg" alt="Ideaspace Landing Page" style="width:100%;">
+												<h4 class="text-uppercase">Ideaspace Landing Page</h4>
+											</div>
+											<div class="item">
+												<img src="assets/img/projects/ideaspace-2.jpg" alt="Ideaspace Exhibit Hall" style="width:100%;">
+												<h4 class="text-uppercase">Ideaspace Exhibit Hall</h4>
+											</div>
+											<div class="item">
+												<img src="assets/img/projects/bworld-1.jpg" alt="Business World Landing Page" style="width:100%;">
+												<h4 class="text-uppercase">Business World Landing Page</h4>
+											</div>
+											<div class="item">
+												<img src="assets/img/projects/bworld-2.jpg" alt="Business World Exhibit Hall" style="width:100%;">
+												<h4 class="text-uppercase">Business World Exhibit Hall</h4>
+											</div>
+											<div class="item">
+												<img src="assets/img/projects/bworld-3.jpg" alt="Business World Networking Lounge" style="width:100%;">
+												<h4 class="text-uppercase">Business World Networking Lounge</h4>
+											</div>
+											<div class="item">
+												<img src="assets/img/projects/bworld-4.jpg" alt="Business World Plenary Hall" style="width:100%;">
+												<h4 class="text-uppercase">Business World Plenary Hall</h4>
+											</div>
+											<div class="item">
+												<img src="assets/img/projects/bworld-5.jpg" alt="Business World Breakout Room" style="width:100%;">
+												<h4 class="text-uppercase">Business World Breakout Room	</h4>
+											</div>
+										</div>
+
+									<!-- Left and right controls -->
+										<a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+											<span class="glyphicon glyphicon-chevron-left"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="right carousel-control" href="#myCarousel2" data-slide="next">
+											<span class="glyphicon glyphicon-chevron-right"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- Modal 3-->
 		<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
 			<div class="modal-dialog">
@@ -402,9 +531,48 @@
 					<div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
 					<div class="container">
 						<div class="row justify-content-center">
-							<div class="col-lg-8">
+							<div class="col-lg-10">
 								<div class="modal-body">
-									<!-- Project Details Go Here--> 
+									<!-- Project Details Go Here-->
+									<div id="myCarousel3" class="carousel slide" data-ride="carousel">
+									 	<!-- Indicators -->
+										<ol class="carousel-indicators">
+											<li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+											<li data-target="#myCarousel3" data-slide-to="1"></li>
+											<li data-target="#myCarousel3" data-slide-to="2"></li>
+											<li data-target="#myCarousel3" data-slide-to="3"></li>
+											<li data-target="#myCarousel3" data-slide-to="4"></li>
+										</ol>
+
+										<!-- Wrapper for slides -->
+
+										<!-- <a data-dismiss="modal" data-toggle="modal" href="#portfolioModal1Pics"> -->
+											<div class="carousel-inner">
+												<div class="item active">
+													<img src="assets/img/projects/1-comments.jpg" alt="Sample Comments Section" style="width:100%;">
+												</div>
+												<div class="item">
+													<img src="assets/img/projects/2-questions.jpg" alt="Sample Questions Section" style="width:100%;">
+												</div>
+												<div class="item">
+													<img src="assets/img/projects/3-photobooths.jpg" alt="Sample Photobooths Section" style="width:100%;">
+												</div>
+												<div class="item">
+													<img src="assets/img/projects/4-photobooths.jpg" alt="Sample Photobooths Section (Preview Image)" style="width:100%;">
+												</div>
+											</div>
+										<!-- </a> -->
+
+									<!-- Left and right controls -->
+										<a class="left carousel-control" href="#myCarousel3" data-slide="prev">
+											<span class="glyphicon glyphicon-chevron-left"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="right carousel-control" href="#myCarousel3" data-slide="next">
+											<span class="glyphicon glyphicon-chevron-right"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div> 
 									<h4 class="text-uppercase">Virnew</h4>
 									<p class="item-intro text-muted">A virtual Events Place for Conferences!</p>
 									<p>I am a fullstack developer in this project. I used React for frontend and Laravel for backend.</p>
@@ -420,15 +588,65 @@
 				</div>
 			</div>
 		</div>
-		<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="portfolio-modal modal fade" data-toggle="modal" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
 					<div class="container">
 						<div class="row justify-content-center">
-							<div class="col-lg-8">
+							<div class="col-lg-10">
 								<div class="modal-body">
 									<!-- Project Details Go Here-->
+									<div id="myCarousel" class="carousel slide" data-ride="carousel">
+									 	<!-- Indicators -->
+										<ol class="carousel-indicators">
+											<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+											<li data-target="#myCarousel" data-slide-to="1"></li>
+											<li data-target="#myCarousel" data-slide-to="2"></li>
+											<li data-target="#myCarousel" data-slide-to="3"></li>
+											<li data-target="#myCarousel" data-slide-to="4"></li>
+											<li data-target="#myCarousel" data-slide-to="5"></li>
+											<li data-target="#myCarousel" data-slide-to="6"></li>
+										</ol>
+
+										<!-- Wrapper for slides -->
+
+										<!-- <a data-dismiss="modal" data-toggle="modal" href="#portfolioModal2Pics"> -->
+											<div class="carousel-inner">
+												<div class="item active">
+													<img src="assets/img/projects/ideaspace-1.jpg" alt="Ideaspace Landing Page" style="width:100%;">
+												</div>
+												<div class="item">
+													<img src="assets/img/projects/ideaspace-2.jpg" alt="Ideaspace Exhibit Hall" style="width:100%;">
+												</div>
+												<div class="item">
+													<img src="assets/img/projects/bworld-1.jpg" alt="Business World Landing Page" style="width:100%;">
+												</div>
+												<div class="item">
+													<img src="assets/img/projects/bworld-2.jpg" alt="Business World Exhibit Hall" style="width:100%;">
+												</div>
+												<div class="item">
+													<img src="assets/img/projects/bworld-3.jpg" alt="Business World Networking Lounge" style="width:100%;">
+												</div>
+												<div class="item">
+													<img src="assets/img/projects/bworld-4.jpg" alt="Business World Plenary Hall" style="width:100%;">
+												</div>
+												<div class="item">
+													<img src="assets/img/projects/bworld-5.jpg" alt="Business World Breakout Room" style="width:100%;">
+												</div>
+											</div>
+										<!-- </a> -->
+
+									<!-- Left and right controls -->
+										<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+											<span class="glyphicon glyphicon-chevron-left"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="right carousel-control" href="#myCarousel" data-slide="next">
+											<span class="glyphicon glyphicon-chevron-right"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
 									<h4 class="text-uppercase">Virnew Booths</h4>
 									<p class="item-intro text-muted">A virtual Events Place for Business Events and Expos!</p>
 									<p>I am a fullstack developer in this project. I used React for frontend and Laravel for backend.</p>
@@ -450,7 +668,7 @@
 					<div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
 					<div class="container">
 						<div class="row justify-content-center">
-							<div class="col-lg-8">
+							<div class="col-lg-10">
 								<div class="modal-body">
 									<!-- Project Details Go Here-->
 									<h4 class="text-uppercase">Job Seeker Website</h4>
@@ -474,7 +692,7 @@
 					<div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
 					<div class="container">
 						<div class="row justify-content-center">
-							<div class="col-lg-8">
+							<div class="col-lg-10">
 								<div class="modal-body">
 									<!-- Project Details Go Here-->
 									<h4 class="text-uppercase">Interactive News Website</h4>
@@ -498,7 +716,7 @@
 					<div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
 					<div class="container">
 						<div class="row justify-content-center">
-							<div class="col-lg-8">
+							<div class="col-lg-10">
 								<div class="modal-body">
 									<!-- Project Details Go Here-->
 									<h4 class="text-uppercase">Sports Management Website</h4>
@@ -522,7 +740,7 @@
 					<div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
 					<div class="container">
 						<div class="row justify-content-center">
-							<div class="col-lg-8">
+							<div class="col-lg-10">
 								<div class="modal-body">
 									<!-- Project Details Go Here-->
 									<h4 class="text-uppercase">Internship</h4>
