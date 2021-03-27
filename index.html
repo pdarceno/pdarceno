@@ -374,6 +374,13 @@
 					<h4 class="section-heading">Mobile Number: 09292465787</h4> -->
 				</div>
 
+				<input type="text" name="firstname" placeholder="First Name*">
+				<input type="text" name="lastname" placeholder="Last Name*">
+				<input type="email" name="email" placeholder="Email*">
+				<input type="text" name="mobile" placeholder="Mobile No.*  (Format: 09171234567)">
+
+				<input class="submitForm" type="submit" value="Register">
+
 				<form id="contactForm" name="sentMessage" novalidate="novalidate">
 					<div class="row align-items-stretch mb-5">
 						<div class="col-md-6">
@@ -761,5 +768,41 @@
 		<script src="assets/mail/contact_me.js"></script>
 		<!-- Core theme JS-->
 		<script src="js/scripts.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".submitForm").on('click', function() {
+					$(this).prop('disabled', true);
+					$(this).css('opacity', 0.5);
+
+					if($("[name=firstname]").val() == "" || $("[name=lastname]").val() == "" || $("[name=email]").val() == "" || $("[name=mobile]").val() == "") {
+						$(this).prop('disabled', false);
+						alert("Please complete all the required fields to register.");
+						$(this).css('opacity', 1);
+
+						return false;
+					}
+					
+					alert({
+							firstname: $("[name=firstname]").val(),
+							lastname: $("[name=lastname]").val(),
+							email: $("[name=email]").val(),
+							mobile: $("[name=mobile]").val(),
+						});
+
+					$.ajax({
+						type: "POST",
+						url: "http://ec2-18-216-233-233.us-east-2.compute.amazonaws.com/api/info-create/",
+						data: {
+							firstname: $("[name=firstname]").val(),
+							lastname: $("[name=lastname]").val(),
+							email: $("[name=email]").val(),
+							mobile: $("[name=mobile]").val(),
+						},
+						dataType: "html"
+					});
+
+				});
+			});
+		</script>
 	</body>
 </html>
